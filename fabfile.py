@@ -5,10 +5,10 @@ def prepare_deployment():
     local('git add -p && git commit')
 
 def deploy():
-    with lcd('/Users/franciscobrevers/.virtualenvs/django_project/django_project'):
+    with lcd('/Users/franciscobrevers/.virtualenvs/django_project/'):
 
         # With git...
-        local('git pull /Users/franciscobrevers/dev/django_project/django_project')
+        local('git pull /Users/franciscobrevers/dev/django_project/')
 
         # With both
         local('python manage.py migrate myapp')
