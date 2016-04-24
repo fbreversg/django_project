@@ -8,7 +8,7 @@ def deploy():
     with lcd('/Users/franciscobrevers/.virtualenvs/django_project/'):
 
         # With git...
-        local('git pull /Users/franciscobrevers/dev/django_project/')
+        local('git pull')
 
         # With both
         local('python manage.py migrate myapp')
