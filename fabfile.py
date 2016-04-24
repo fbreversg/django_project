@@ -5,7 +5,7 @@ def prepare_deployment():
     local('git add -p && git commit')
 
 def deploy():
-    with lcd('/Users/franciscobrevers/.virtualenvs/django_project/'):
+    with lcd('/Users/franciscobrevers/.virtualenvs/django_project/django_project'):
 
         # With git...
         local('git pull')
