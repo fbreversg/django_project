@@ -1,7 +1,7 @@
 from fabric.api import local, lcd
 
 def prepare_deployment():
-    local('python manage.py test django_project')
+    local('python manage.py test myapp')
     local('git add -p && git commit')
 
 def deploy():
